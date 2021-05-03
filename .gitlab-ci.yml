@@ -1,0 +1,3 @@
+include:
+  - project: 'internal-tools/ci-cd'
+    file: '/.shared-gitlab-ci.yml'
