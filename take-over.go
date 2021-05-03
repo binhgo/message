@@ -6,8 +6,9 @@ import (
 	"syscall"
 	"time"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model"
+	"github.com/binhgo/go-sdk/sdk"
+
+	"github.com/binhgo/message/model"
 )
 
 var signals chan os.Signal

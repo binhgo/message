@@ -1,8 +1,9 @@
 package model
 
 import (
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+	"github.com/binhgo/go-sdk/sdk"
+
+	"github.com/binhgo/message/model/enum"
 )
 
 type MessageQueueItem struct {

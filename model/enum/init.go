@@ -14,7 +14,7 @@ type TopicEnum struct {
 	VIDEO_OFFER       TopicEnumValue
 	VIDEO_ANSWER      TopicEnumValue
 	NEW_ICE_CANDIDATE TopicEnumValue
-	HANG_UP			  TopicEnumValue
+	HANG_UP           TopicEnumValue
 }
 
 var Topic = &TopicEnum{
@@ -29,7 +29,7 @@ var Topic = &TopicEnum{
 	VIDEO_OFFER:       TopicEnumValue("VIDEO_OFFER"),
 	VIDEO_ANSWER:      TopicEnumValue("VIDEO_ANSWER"),
 	NEW_ICE_CANDIDATE: TopicEnumValue("NEW_ICE_CANDIDATE"),
-	HANG_UP: 		   TopicEnumValue("HANG_UP"),
+	HANG_UP:           TopicEnumValue("HANG_UP"),
 }
 
 type RoomTypeEnumValue string

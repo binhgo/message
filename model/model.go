@@ -3,7 +3,7 @@ package model
 import (
 	"encoding/json"
 
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+	"github.com/binhgo/message/model/enum"
 )
 
 type WSInputMessage struct {

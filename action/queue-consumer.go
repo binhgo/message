@@ -3,11 +3,12 @@ package action
 import (
 	"errors"
 
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/cip"
-	"gitlab.ghn.vn/internal-tools/message/model"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/cip"
+	"github.com/binhgo/message/model"
+	"github.com/binhgo/message/model/enum"
 )
 
 func QueueConsume(item *sdk.SortedQueueItem) error {

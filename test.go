@@ -5,11 +5,12 @@ import (
 	"crypto/rsa"
 	"fmt"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/action"
-	"gitlab.ghn.vn/internal-tools/message/api"
-	"gitlab.ghn.vn/internal-tools/message/cip"
-	"gitlab.ghn.vn/internal-tools/message/model"
+	"github.com/binhgo/go-sdk/sdk"
+
+	"github.com/binhgo/message/action"
+	"github.com/binhgo/message/api"
+	"github.com/binhgo/message/cip"
+	"github.com/binhgo/message/model"
 )
 
 func TEST() {

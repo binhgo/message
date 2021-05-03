@@ -1,8 +1,6 @@
 package main
 
-import (
-	"gitlab.ghn.vn/internal-tools/message/action"
-)
+import "github.com/binhgo/message/action"
 
 func test_firebase_send_msg() {
 

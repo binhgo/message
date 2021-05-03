@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"gitlab.ghn.vn/internal-tools/message/config"
+	"github.com/binhgo/go-sdk/sdk"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
+	"github.com/binhgo/message/config"
 )
 
 var ssoClient *sdk.RestClient

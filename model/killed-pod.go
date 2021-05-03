@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
+	"github.com/binhgo/go-sdk/sdk"
 )
 
 type KilledPod struct {

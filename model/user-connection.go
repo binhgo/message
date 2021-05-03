@@ -4,11 +4,12 @@ import (
 	"os"
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
+	"github.com/binhgo/go-sdk/sdk/websocket"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk/websocket"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/model/enum"
 )
 
 type UserConnection struct {

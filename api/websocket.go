@@ -8,13 +8,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
+	"github.com/binhgo/go-sdk/sdk/websocket"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk/websocket"
-	"gitlab.ghn.vn/internal-tools/message/action"
-	"gitlab.ghn.vn/internal-tools/message/cip"
-	"gitlab.ghn.vn/internal-tools/message/model"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/action"
+	"github.com/binhgo/message/cip"
+	"github.com/binhgo/message/model"
+	"github.com/binhgo/message/model/enum"
 )
 
 func OnWSConnected(conn *websocket.Connection) {
@@ -202,35 +203,35 @@ func caseAuth(conn *websocket.Connection, msg model.WSInputMessage) {
 
 			break
 
-		//case sdk.APIStatus.NotFound:
-		//
-		//	priKey, pubKey, err := cip.GenerateRsaKeyPairPem()
-		//	if err != nil {
-		//		outputMsg := &model.WSOutputMessage{
-		//			Topic: enum.Topic.AUTHORIZATION,
-		//			Content: &model.Content{
-		//				Status:  sdk.APIStatus.Invalid,
-		//				ErrCode: err.Error(),
-		//			},
-		//		}
-		//
-		//		action.PushMessageToDevice(conn, outputMsg.String(), nil)
-		//		break
-		//	}
-		//
-		//	createRs := model.UserDB.Create(model.User{
-		//		UserID: userId,
-		//		Name:   userInfo.Name,
-		//		Phone:  userInfo.Phone,
-		//		Key:    priKey,
-		//		PubKey: pubKey,
-		//	})
-		//
-		//	if createRs.Status == sdk.APIStatus.Ok {
-		//		user = createRs.Data.([]*model.User)[0]
-		//	}
-		//
-		//	break
+			// case sdk.APIStatus.NotFound:
+			//
+			//	priKey, pubKey, err := cip.GenerateRsaKeyPairPem()
+			//	if err != nil {
+			//		outputMsg := &model.WSOutputMessage{
+			//			Topic: enum.Topic.AUTHORIZATION,
+			//			Content: &model.Content{
+			//				Status:  sdk.APIStatus.Invalid,
+			//				ErrCode: err.Error(),
+			//			},
+			//		}
+			//
+			//		action.PushMessageToDevice(conn, outputMsg.String(), nil)
+			//		break
+			//	}
+			//
+			//	createRs := model.UserDB.Create(model.User{
+			//		UserID: userId,
+			//		Name:   userInfo.Name,
+			//		Phone:  userInfo.Phone,
+			//		Key:    priKey,
+			//		PubKey: pubKey,
+			//	})
+			//
+			//	if createRs.Status == sdk.APIStatus.Ok {
+			//		user = createRs.Data.([]*model.User)[0]
+			//	}
+			//
+			//	break
 		}
 
 		outputMsg := &model.WSOutputMessage{

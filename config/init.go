@@ -5,14 +5,14 @@ import "os"
 type OutboundAPICredential struct {
 	Url  string
 	Auth string
-	//For SSOv2
-	AppKey string
+	// For SSOv2
+	AppKey    string
 	AppSecret string
 }
 
 type config struct {
 	SSO            *OutboundAPICredential
-	SSOv2		   *OutboundAPICredential
+	SSOv2          *OutboundAPICredential
 	DefaultOrgCode string
 	MainDBName     string
 	QueueDBName    string
@@ -51,8 +51,8 @@ func init() {
 				Auth: "Basic b25saW5lOnl6MmdxeWdiSGJKV0JENXpra2pRSmdqU1o2MzRWYkFx",
 			},
 			SSOv2: &OutboundAPICredential{
-				Url: "https://dev-online-gateway.ghn.vn/sso-v2/public-api/staff",
-				AppKey: "6e3132ca-8833-4db0-8a7a-3447d7a09d63",
+				Url:       "https://dev-online-gateway.ghn.vn/sso-v2/public-api/staff",
+				AppKey:    "6e3132ca-8833-4db0-8a7a-3447d7a09d63",
 				AppSecret: "b81e3762-530f-4061-ba41-089c1887f327",
 			},
 		}

@@ -2,10 +2,12 @@ package client
 
 import (
 	"encoding/json"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/config"
 	"os"
 	"time"
+
+	"github.com/binhgo/go-sdk/sdk"
+
+	"github.com/binhgo/message/config"
 )
 
 var ssov2Client *sdk.RestClient

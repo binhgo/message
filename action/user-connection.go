@@ -4,11 +4,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
 	"github.com/mssola/user_agent"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/model"
+	"github.com/binhgo/message/model/enum"
 )
 
 var USER_CON_ID = "userConId"
@@ -23,8 +24,8 @@ func AuthorizeV2(connId bson.ObjectId, userId, userAgent, IP string) *sdk.APIRes
 		}
 	}
 
-	//ssoResp := client.GenTokenSSOv2(ssotoken, userAgent, IP)
-	//if ssoResp.Status == sdk.APIStatus.Ok {
+	// ssoResp := client.GenTokenSSOv2(ssotoken, userAgent, IP)
+	// if ssoResp.Status == sdk.APIStatus.Ok {
 	//	genTokenSSOv2 := ssoResp.Data.([]client.GenTokenSSOv2Data)[0]
 	//	accessToken := genTokenSSOv2.AccessToken
 	//

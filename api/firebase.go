@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"errors"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/action"
+	"github.com/binhgo/go-sdk/sdk"
+
+	"github.com/binhgo/message/action"
 )
 
 func RegisterNewFirebaseDevice(req sdk.APIRequest, res sdk.APIResponder) error {

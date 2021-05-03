@@ -1,12 +1,13 @@
 package api
 
 import (
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/action"
-	"gitlab.ghn.vn/internal-tools/message/cip"
-	"gitlab.ghn.vn/internal-tools/message/model"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/action"
+	"github.com/binhgo/message/cip"
+	"github.com/binhgo/message/model"
+	"github.com/binhgo/message/model/enum"
 )
 
 func GetMsgRoom(req sdk.APIRequest, res sdk.APIResponder) error {

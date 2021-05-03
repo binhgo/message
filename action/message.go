@@ -3,11 +3,12 @@ package action
 import (
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
+	"github.com/binhgo/go-sdk/sdk/websocket"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk/websocket"
-	"gitlab.ghn.vn/internal-tools/message/model"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/model"
+	"github.com/binhgo/message/model/enum"
 )
 
 var supportedTopic = []enum.TopicEnumValue{

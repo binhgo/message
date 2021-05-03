@@ -3,10 +3,11 @@ package model
 import (
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/model/enum"
 )
 
 type MessageLog struct {

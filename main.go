@@ -8,12 +8,12 @@ import (
 	"syscall"
 	"time"
 
-	"gitlab.ghn.vn/internal-tools/message/action"
-	"gitlab.ghn.vn/internal-tools/message/api"
-	"gitlab.ghn.vn/internal-tools/message/config"
-	"gitlab.ghn.vn/internal-tools/message/model"
+	"github.com/binhgo/go-sdk/sdk"
 
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
+	"github.com/binhgo/message/action"
+	"github.com/binhgo/message/api"
+	"github.com/binhgo/message/config"
+	"github.com/binhgo/message/model"
 )
 
 var info = &apiInfo{}

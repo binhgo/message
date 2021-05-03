@@ -5,7 +5,7 @@ import (
 	"crypto/rsa"
 	"strings"
 
-	"gitlab.ghn.vn/internal-tools/message/cip"
+	"github.com/binhgo/message/cip"
 )
 
 func DecryptMsg(msg []byte, key *rsa.PrivateKey) string {

@@ -1,9 +1,10 @@
 package action
 
 import (
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model"
+
+	"github.com/binhgo/message/model"
 )
 
 //

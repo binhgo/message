@@ -3,8 +3,8 @@ package model
 import (
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
 )
 
 type MessageRoom struct {

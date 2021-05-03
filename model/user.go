@@ -1,18 +1,18 @@
 package model
 
 import (
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
 )
 
 type User struct {
 	ID bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
 
-	UserID string `json:"userId,omitempty" bson:"user_id,omitempty"`
+	UserID   string `json:"userId,omitempty" bson:"user_id,omitempty"`
 	Password string `json:"password,omitempty" bson:"password,omitempty"`
-	Name   string `json:"name,omitempty" bson:"name,omitempty"`
-	Email  string `json:"email,omitempty" bson:"email,omitempty"`
-	Phone  string `json:"phone,omitempty" bson:"phone,omitempty"`
+	Name     string `json:"name,omitempty" bson:"name,omitempty"`
+	Email    string `json:"email,omitempty" bson:"email,omitempty"`
+	Phone    string `json:"phone,omitempty" bson:"phone,omitempty"`
 
 	Avatar string `json:"avatar,omitempty" bson:"avatar,omitempty"`
 	Key    string `json:"-" bson:"key,omitempty"`

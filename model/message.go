@@ -3,10 +3,11 @@ package model
 import (
 	"time"
 
+	"github.com/binhgo/go-sdk/sdk"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"gitlab.ghn.vn/common-projects/go-sdk/sdk"
-	"gitlab.ghn.vn/internal-tools/message/model/enum"
+
+	"github.com/binhgo/message/model/enum"
 )
 
 type Message struct {
@@ -85,11 +86,11 @@ type Content struct {
 	SDP       interface{} `json:"sdp,omitempty" bson:"sdp,omitempty"`
 	Candidate interface{} `json:"candidate,omitempty" bson:"candidate,omitempty"`
 
-	Type        string      `json:"type,omitempty" bson:"type,omitempty"`
-	ChatRoomID  string      `json:"chatRoomId,omitempty" bson:"chatRoomId,omitempty"`
-	FromUserId  string      `json:"fromUserId,omitempty" bson:"fromUserId,omitempty"`
-	//SSOToken    string      `json:"ssoToken,omitempty" bson:"ssoToken,omitempty"`
-	UserId 		string 		`json:"userId,omitempty" bson:"user_id,omitempty"`
+	Type       string `json:"type,omitempty" bson:"type,omitempty"`
+	ChatRoomID string `json:"chatRoomId,omitempty" bson:"chatRoomId,omitempty"`
+	FromUserId string `json:"fromUserId,omitempty" bson:"fromUserId,omitempty"`
+	// SSOToken    string      `json:"ssoToken,omitempty" bson:"ssoToken,omitempty"`
+	UserId      string      `json:"userId,omitempty" bson:"user_id,omitempty"`
 	Action      string      `json:"action,omitempty" bson:"action,omitempty"`
 	Data        interface{} `json:"data,omitempty" bson:"data,omitempty"`
 	User        *User       `json:"user,omitempty" bson:"user,omitempty"`
